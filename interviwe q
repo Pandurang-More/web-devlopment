@@ -1,1 +1,60 @@
+Databases
+├── SQL (Relational)
+│   ├── MySQL
+│   ├── PostgreSQL
+│   └── Oracle
+│
+└── NoSQL (Non-relational)
+    ├── MongoDB
+    ├── Redis
+    ├── Cassandra
+    └── Neo4j
 
+
+✅ Choose SQL (Relational Databases) when:
+
+Use MySQL / PostgreSQL / Oracle if:
+
+Data is highly structured
+
+Schema does not change frequently
+
+You need ACID transactions
+
+You have complex joins & relationships
+
+Data consistency is very critical
+
+📌 Examples:
+
+Banking systems
+
+Payment systems
+
+ERP / HR systems
+
+Inventory management
+
+✅ Choose NoSQL (MongoDB, etc.) when:
+
+Use MongoDB / Redis / Cassandra if:
+
+Data is semi-structured or unstructured
+
+Schema changes frequently
+
+Application needs high scalability
+
+Read/write performance is important
+
+Data can be denormalized
+
+📌 Examples:
+
+Social media apps
+
+E-commerce product catalogs
+
+Real-time analytics
+
+IoT applications
