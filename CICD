@@ -1,0 +1,129 @@
+🚀 Complete Notes: CI/CD (Continuous Integration & Continuous Delivery)
+
+📌 1. Introduction to CI/CD
+• Definition: CI/CD is a core concept of DevOps that automates the process of moving code from development to production.
+• The Problem: In large applications (like E-commerce), multiple developers work on the same codebase. Manually merging, testing, and deploying code leads to "Integration Hell," errors, and slow releases.
+
+
+🏗️ 2. The Software Development Life Cycle (SDLC) Steps
+Any change (bug fix or new feature) goes through these stages:
+
+1. Develop
+   Writing code on a local branch.
+
+2. Commit/Push
+   Merging local changes into the main branch (often using Git).
+
+3. Build
+   Creating Deployable Artifacts (Build Files).
+   • Includes source code + dependencies + libraries.
+   • Examples: Binary files, Executable files, or .apk files for Android.
+
+4. Test
+   Running various automated tests.
+
+5. Release
+   Making the application available to end-users.
+
+6. Deploy
+   Making the code available on a specific environment.
+
+
+🧪 3. Types of Testing in CI/CD
+
+Testing is divided into two phases:
+
+Pre-Deployment Tests:
+• Unit Tests – Testing individual components (usually done by developers).
+• Integration Tests – Checking if different components work together correctly.
+• Regression Tests – Ensuring new changes haven't broken existing functionality.
+
+Post-Deployment (End-to-End / E2E Tests):
+• Performed after deploying to Staging or Production.
+• Includes Security Tests, Smoke Tests, Alpha/Beta Testing.
+
+
+🌐 4. Deployment Environments
+
+Organizations typically maintain three main environments:
+
+1. Dev (Development)
+   Used only by developers for internal testing.
+
+2. Staging (Pre-Production)
+   A replica of production used for final demos, manager/CTO approvals, and E2E testing.
+
+3. Prod (Production)
+   The live environment accessed by real end-users.
+
+
+🔄 5. CI vs. CD (The Two Types of CD)
+
+CI: Continuous Integration
+• Automates the Build and Test steps.
+• Triggered every time a developer commits code.
+
+CD: Continuous Delivery vs Continuous Deployment
+
+Feature: Automation
+• Continuous Delivery: Automates up to Staging
+• Continuous Deployment: Fully automated up to Production
+
+Feature: Approval
+• Continuous Delivery: Manual approval required
+• Continuous Deployment: No manual intervention
+
+Feature: Use Case
+• Continuous Delivery: Banking, Fintech
+• Continuous Deployment: Netflix, Hotstar
+
+
+⚖️ 6. Why do we need CI/CD? (Manual vs Automated)
+
+Manual Issues:
+• Integration Hell – Hard to merge multiple developers’ code.
+• Code Freeze – Stopping work to manually test and deploy.
+• Error Prone – Humans miss bugs in repetitive tasks.
+• Backup Restore – Slow recovery causes downtime.
+
+CI/CD Benefits:
+• Speed & Reliability – Small, frequent, tested releases.
+• Zero Downtime – Users don’t face crashes during updates.
+• Automation – YAML scripts handle repetitive work.
+
+
+🛠️ 7. Tools and Implementation
+
+• YAML Files
+  Workflows are defined using .yaml or .yml files.
+
+• GitHub Actions (2019)
+  – Native to GitHub
+  – Easy setup
+  – Visual feedback (Green = success, Red = failure)
+
+• Jenkins (2011)
+  – Open-source job orchestrator
+  – Very powerful but harder to maintain
+
+• Other Tools
+  CircleCI, Travis CI, GitLab CI CD, Bamboo
+
+
+🚀 8. Deployment Strategies
+
+1. Blue-Green Deployment
+   • Two identical environments (Blue = Old, Green = New)
+   • Instant traffic switch
+   • Easy rollback
+
+2. Canary Deployment
+   • Send 5–10% traffic to new version
+   • Gradually increase to 100%
+
+3. Rolling Deployment
+   • Update servers one by one
+   • Application stays online
+
+
+Notes based on the Apna College DevOps Series.
