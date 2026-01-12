@@ -1,0 +1,90 @@
+🔁 Software Development Life Cycle (SDLC)
+
+1️⃣ Requirement Analysis
+
+What happens
+- Understand client/user needs
+- Gather functional & non-functional requirements
+- Create SRS (Software Requirement Specification)
+
+Example
+- Login system
+- Performance, security, scalability needs
+
+📌 Output: SRS document
+
+
+2️⃣ System Design
+
+What happens
+- Decide system architecture
+- Database design
+- UI/UX wireframes
+- Technology stack selection
+
+Example
+- Frontend: React
+- Backend: Django
+- DB: PostgreSQL
+
+📌 Output: Design documents (HLD, LLD)
+
+
+3️⃣ Implementation (Coding)
+
+What happens
+- Developers write code based on design
+- Follow coding standards
+- Version control (Git)
+
+Example
+- API development
+- UI components creation
+
+📌 Output: Working source code
+
+
+4️⃣ Testing
+
+What happens
+- Find bugs and defects
+- Ensure software meets requirements
+
+Types of Testing
+- Unit Testing
+- Integration Testing
+- System Testing
+- User Acceptance Testing (UAT)
+
+📌 Output: Bug-free, validated software
+
+
+5️⃣ Deployment
+
+What happens
+- Software released to production
+- Configure servers
+- CI/CD pipelines
+
+Example
+- Deploy on AWS / Azure
+- Docker, Jenkins
+
+📌 Output: Live application
+
+
+6️⃣ Maintenance
+
+What happens
+- Bug fixing
+- Performance improvements
+- Feature updates
+
+Example
+- Security patches
+- New feature addition
+
+📌 Output: Updated & stable system
+
+
+Requirement → Design → Development → Testing → Deployment → Maintenance
