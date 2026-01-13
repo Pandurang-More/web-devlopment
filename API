@@ -1,0 +1,250 @@
+====================================================
+Introduction to API & Postman – Notes
+====================================================
+
+1. Introduction to API
+
+Definition:
+API stands for Application Programming Interface.
+It acts as a bridge that allows two software applications to talk to each other.
+
+Examples given:
+
+• Google Maps  
+  Food delivery apps (like UberEats) use the Google Maps API to show locations
+  instead of building their own maps.
+
+• Weather Applications  
+  Your phone's weather app fetches data from a remote server using an API.
+
+• Payment Gateways  
+  Websites use APIs from PayPal or banks to process payments securely.
+
+
+----------------------------------------------------
+
+2. How API Works (The Waiter Analogy)
+
+The instructor explains the concept using a restaurant diagram:
+
+• The Client (Customer)  
+  The person who wants something (e.g., a mobile app or browser).
+
+• The API (Waiter)  
+  The messenger. It takes the Request from the client and delivers it to the kitchen.
+
+• The Server (Kitchen)  
+  The system that processes the request and prepares the "food" (data).
+
+• The Response  
+  The waiter (API) brings the prepared food (data) back to the customer (Client).
+
+
+----------------------------------------------------
+
+3. Types of APIs
+
+The instructor categorizes APIs into three main types:
+
+• Hardware APIs  
+  Allow software to talk to hardware (e.g., using the camera on a phone).
+
+• Operating System (OS) APIs  
+  Allow applications to run on an OS (like Windows or iOS).
+
+• Web APIs  
+  APIs that operate over the internet.
+  This is the focus of the tutorial.
+
+REST API:
+REST (Representational State Transfer) is the most popular
+architectural style for Web APIs.
+
+
+----------------------------------------------------
+
+4. Introduction to Postman
+
+What is it?
+Postman is an API Client tool used to design, build, and test APIs.
+
+Why use it?
+It provides a user-friendly interface (GUI) to send requests without writing code.
+
+
+----------------------------------------------------
+
+5. Workspaces and Collections
+
+Workspace:
+The personal or team environment where you organize your work.
+
+Collections:
+These are like folders on your computer.
+They are used to group related API requests together to keep things organized
+(e.g., keeping all "Book Store" requests in one folder).
+
+
+----------------------------------------------------
+
+6. HTTP Methods (Verbs)
+
+The instructor maps HTTP methods to database actions:
+
+• GET  
+  Used to retrieve or fetch data from the server.
+
+• POST  
+  Used to send data to the server to create a new resource.
+
+• PUT  
+  Used to update an existing resource completely.
+
+• PATCH  
+  Used to partially update a resource (only specific fields).
+
+• DELETE  
+  Used to remove data from the server.
+
+
+----------------------------------------------------
+
+7. URL Structure
+
+The instructor breaks down the URL:
+https://simple-books-api.glitch.me/books
+
+• Protocol  
+  https://
+
+• Domain (Base URL)  
+  simple-books-api.glitch.me  
+  (The address of the server)
+
+• Endpoint (Path)  
+  /books  
+  (The specific location of the data you want)
+
+
+----------------------------------------------------
+
+8. Query Parameters
+
+Purpose:
+Used to filter or sort the data you are requesting.
+
+Syntax:
+Starts with a question mark ? at the end of the URL.
+
+Format:
+key=value
+
+Example:
+.../books?type=fiction
+
+This tells the server to only return books where the type is "fiction".
+
+Multiple Parameters:
+You can add more filters using the ampersand & symbol.
+Example:
+?type=fiction&limit=5
+
+
+----------------------------------------------------
+
+9. Path Parameters
+
+Purpose:
+Used to point to a specific resource (like a specific book ID).
+
+Syntax:
+In Postman, these are often defined with a colon : (e.g., /books/:bookId),
+but in the actual URL, you just put the value.
+
+Example:
+.../books/1  
+(Where 1 is the ID of the specific book you want to see)
+
+
+----------------------------------------------------
+
+10. Status Codes
+
+The instructor lists the most important status codes to remember:
+
+• 200 OK  
+  The request was successful.
+
+• 201 Created  
+  Successful creation of data (usually after a POST request).
+
+• 204 No Content  
+  Successful request but no data returned (often after DELETE).
+
+• 400 Bad Request  
+  The client sent incorrect data.
+
+• 401 Unauthorized  
+  Authentication failed (e.g., missing or wrong API key).
+
+• 404 Not Found  
+  The resource or endpoint does not exist.
+
+• 500 Internal Server Error  
+  The server crashed or had a problem processing the request.
+
+
+----------------------------------------------------
+
+11. POST Requests and Authentication
+
+Body:
+When sending a POST request (creating data),
+you must send data in the Body of the request.
+The instructor selects JSON format.
+
+Authentication:
+Some APIs require permission.
+The instructor shows how to add an "Access Token"
+in the Authorization tab using the "Bearer Token" type.
+
+
+----------------------------------------------------
+
+12. Variables
+
+Purpose:
+To avoid copying and pasting the same values
+(like the Base URL) repeatedly.
+
+Syntax:
+Variables in Postman are enclosed in double curly braces:
+{{variable_name}}
+
+Levels:
+
+• Global  
+  Available everywhere.
+
+• Collection  
+  Available only inside the collection.
+
+• Environment  
+  Available when a specific environment is active.
+
+
+----------------------------------------------------
+
+13. JSON Syntax
+
+• Object  
+  Represented by curly braces { }  
+  Contains key-value pairs.
+
+• Array  
+  Represented by square brackets [ ]  
+  Contains a list of objects or values.
+
+====================================================
+
+
