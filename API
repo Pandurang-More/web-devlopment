@@ -59,6 +59,17 @@ REST API:
 REST (Representational State Transfer) is the most popular
 architectural style for Web APIs.
 
+REST API Principles :
+
+Stateless – Server does not store client info
+
+Client-Server Architecture
+
+Uniform Interface (fixed URL + HTTP methods)
+
+Resource-based URLs
+
+Uses standard HTTP methods
 
 ----------------------------------------------------
 
