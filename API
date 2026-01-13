@@ -50,11 +50,10 @@ The instructor categorizes APIs into three main types:
   Allow software to talk to hardware (e.g., using the camera on a phone).
 
 • Operating System (OS) APIs  
-  Allow applications to run on an OS (like Windows or iOS).
+  editing the photos,applying filter.
 
 • Web APIs  
-  APIs that operate over the internet.
-  This is the focus of the tutorial.
+  your post on instagram
 
 REST API:
 REST (Representational State Transfer) is the most popular
@@ -164,6 +163,7 @@ but in the actual URL, you just put the value.
 Example:
 .../books/1  
 (Where 1 is the ID of the specific book you want to see)
+GET:https://githum.com/Pandurang-More
 
 
 ----------------------------------------------------
@@ -180,6 +180,8 @@ The instructor lists the most important status codes to remember:
 
 • 204 No Content  
   Successful request but no data returned (often after DELETE).
+
+  300 redirection
 
 • 400 Bad Request  
   The client sent incorrect data.
