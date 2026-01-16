@@ -1,0 +1,221 @@
+String Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+Methods – actions that can be performed on objects.
+
+Format:
+stringName.method()
+
+
+String Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+let msg = "  Hello  ";
+
+str.trim()
+Trims whitespaces from both ends of string & returns a new one.
+
+output: "Hello", but value of msg remains same.
+
+
+String are Immutable in JS
+────────────────────────────────────────────────────────────────────────────────────────
+
+No changes can be made to strings.
+Whenever we do try to make a change, a new string is created and old one remains same.
+
+
+String Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+let str = "Random string";
+
+str.toUpperCase()    "RANDOM STRING"
+str.toLowerCase()    "random string"
+
+
+indexOf
+────────────────────────────────────────────────────────────────────────────────────────
+
+Returns the first index of occurrence of some value in string.
+Or gives -1 if not found.
+
+let str = "iloveCoding";
+
+str.indexOf("love")   // 1
+str.indexOf("y")      // -1 (not found)
+str.indexOf("o")      // 2 (only 1 index)
+
+
+Method Chaining
+────────────────────────────────────────────────────────────────────────────────────────
+
+Using one method after another.
+Order of execution will be left to right.
+
+str.toUpperCase().trim()
+
+
+slice
+────────────────────────────────────────────────────────────────────────────────────────
+
+Returns a part of the original string as a new string.
+
+let str = "iloveCoding";
+
+str.slice(5)        // "Coding"
+str.slice(1, 5)     // "love"   // exclude last index
+
+str.slice(-num) = str.slice(length-num)
+
+
+replace
+────────────────────────────────────────────────────────────────────────────────────────
+
+Searches a value in the string & returns a new string with the value replaced.
+
+let str = "iloveCoding";
+
+str.replace("love", "do")   // "IdoCoding"
+str.replace("o", "x")       // "ilxveCoding"
+
+
+repeat
+────────────────────────────────────────────────────────────────────────────────────────
+
+Returns a string with the number of copies of a string.
+
+let str = "Mango";
+
+str.repeat(3)    // "MangoMangoMango"
+
+Creating Arrays
+────────────────────────────────────────────────────────────────────────────────────────
+
+let marks = [99, 85, 93, 76, 62];
+let names = ["adam", "bob", "catlyn"];
+let info = ["aman", 25, 6.1];     // mixed array
+
+// empty array
+let newArr = [];
+
+arr.length
+
+
+Arrays are Mutable
+────────────────────────────────────────────────────────────────────────────────────────
+
+let fruits = ["mango", "apple", "litchi"];
+
+fruits[0] = "banana";
+
+fruits   // ['banana', 'apple', 'litchi']
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+Push : add to end  
+Pop  : delete from end & returns it  
+
+Unshift : add to start  
+Shift   : delete from start & returns it  
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+indexOf : returns index of something
+
+let primary = ["red", "yellow", "blue"];
+
+primary.indexOf("yellow");   // 1
+primary.indexOf("green");    // -1
+
+
+includes : search for a value
+
+primary.includes("red");     // true
+primary.includes("green");   // false
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+concat : merge 2 arrays
+
+let primary = ["red", "yellow", "blue"];
+let secondary = ["orange", "green", "violet"];
+
+primary.concat(secondary);
+// ['red', 'yellow', 'blue', 'orange', 'green', 'violet']
+
+reverse : reverse an array
+
+primary.reverse();
+// ['blue', 'yellow', 'red']
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+slice : copies a portion of an array
+
+let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+
+colors.slice();        // ['red','yellow','blue','orange','pink','white']
+colors.slice(2);       // ['blue','orange','pink','white']
+colors.slice(2, 3);    // ['blue']
+colors.slice(-2);      // ['pink','white']
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+splice : removes / replaces / add elements in place             change original array
+
+splice(start, deleteCount, item0...itemN)
+
+colors.splice(4);
+colors.splice(0, 1);
+colors.splice(0, 1, "black", "grey");
+
+
+Array Methods
+────────────────────────────────────────────────────────────────────────────────────────
+
+sort : sorts an array
+
+let days = ["monday", "sunday", "wednesday", "tuesday"];
+
+days.sort();
+// ['monday','sunday','tuesday','wednesday']
+
+let squares = [25, 16, 4, 49, 36, 9];
+
+squares.sort();
+// [16, 25, 36, 4, 49, 9]
+
+sort method in array converts numbers to string then performs operation
+
+
+Array References
+────────────────────────────────────────────────────────────────────────────────────────
+
+[1] === [1]    // false
+
+Arrays are compared by address in memory
+
+let nums = [1, 2, 3];
+
+
+Nested Arrays
+────────────────────────────────────────────────────────────────────────────────────────
+
+array of arrays
+
+let nums = [[2, 4], [3, 6], [4, 8]];
+
+nums
+// [Array(2), Array(2), Array(2)]
+
