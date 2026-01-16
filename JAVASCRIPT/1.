@@ -81,7 +81,7 @@ To be explicitly assigned.
 let a = null;  
 a   // null  
 
-type of null is object
+type of null is object.
 
 ==============================================================
 
