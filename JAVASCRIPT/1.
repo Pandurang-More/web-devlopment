@@ -1,0 +1,95 @@
+==============================================================
+Data Types in JS
+==============================================================
+
+Primitive Types
+- Number        // represents numeric values
+- Boolean       // true or false
+- String        // text data
+- Undefined     // declared but not assigned
+- Null          // intentional empty value
+- Bigint        // large integers
+- Symbol        // unique identifiers
+
+==============================================================
+
+Exponentiation (power operator)
+Used to calculate power.
+
+2 ** 3 = 8  
+a ** b
+
+==============================================================
+
+NaN in JS
+The NaN global property is a value representing Not-A-Number.
+Occurs when a numeric operation fails.
+
+0 / 0  
+NaN - 1  
+NaN * 1  
+NaN + NaN  
+
+type of NaN is number
+
+==============================================================
+
+Operator Precedence
+This is the general order of solving an expression.
+
+()        // parentheses first  
+**        // exponentiation  
+*, /, %   // multiplication, division, modulus  
++, -      // addition, subtraction  
+
+==============================================================
+
+Boolean in JS
+Boolean represents a truth value → true or false / yes or no
+
+let age = 23;  
+let isAdult = true;    // condition satisfied  
+
+let age = 13;  
+let isAdult = false;   // condition not satisfied  
+
+==============================================================
+
+String in JS
+Strings are text or sequence of characters
+
+let name = "Tony Stark";  
+let role = 'ironman';  
+let char = 'a';  
+let num = '23';        // number stored as string  
+let empty = "";       // empty string  
+
+==============================================================
+
+null & undefined in JS
+
+undefined  
+A variable that has not been assigned a value is of type undefined.
+
+let a;  
+a   // undefined  
+
+null  
+The null value represents the intentional absence of any object value.
+To be explicitly assigned.
+
+let a = null;  
+a   // null  
+
+type of null is object
+
+==============================================================
+
+What is TypeScript?
+Static Typed, where JS is dynamic typed  
+Designed by Microsoft
+
+==============================================================
+
+We can change the type of variable in JS by simply assigning a new type.
+==============================================================
