@@ -1,0 +1,87 @@
+Template Literals
+────────────────────────────────────────────────────────────────────────────────────────
+
+They are used to add embedded expressions in a string.
+
+let a = 5;
+let b = 10;
+
+console.log(`Your pay ${a + b} rupees`);
+
+// console.log("Price is", a+b, "rupees");
+
+
+Operators in JS
+────────────────────────────────────────────────────────────────────────────────────────
+
+- Arithmetic (+, -, *, /, %, **)
+- Unary (++, --)
+- Assignment (=, +=, -=, *=, /=, %= etc.)
+- Comparison
+- Logical
+
+
+truthy & falsy
+────────────────────────────────────────────────────────────────────────────────────────
+
+Everything in JS is true or false (in boolean context).
+
+This doesn't mean their value itself is false or true,
+but they are treated as false or true if taken in boolean context.
+
+Falsy values:
+false, 0, -0, 0n (BigInt value), "" (empty string), null, undefined, NaN
+
+Truthy values:
+Everything else
+
+
+switch statement example
+────────────────────────────────────────────────────────────────────────────────────────
+
+let day = 12;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday, fun day");
+    break;
+  default:
+    console.log("wrong day!");
+}
+
+
+Alert & Prompt
+────────────────────────────────────────────────────────────────────────────────────────
+
+Alert displays an alert message on the page.
+
+alert("something is wrong!");
+
+Prompt displays a dialog box that asks user for some input.
+
+prompt("please enter your roll no.");
+
+
+Prompt example
+────────────────────────────────────────────────────────────────────────────────────────
+
+let firstName = prompt("enter your name : ");
+console.log(firstName);
