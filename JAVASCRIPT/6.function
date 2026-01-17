@@ -12,7 +12,7 @@ function hello() {
 }
 
 
-Function Calling (Using the function)
+Function Calling:
 
 funcName();
 hello();
@@ -49,8 +49,8 @@ function calSum(a, b) {
   console.log(sum);
 }
 
-calSum(1, 2);
-console.log(sum);
+calSum(1, 2);          //3
+console.log(sum);      //54
 
 
 Block Scope
@@ -126,14 +126,12 @@ function oddEvenTest(request) {
 }
 
 
-Hoisting in JS
-────────────────────────────────────────────────────────────────────────────────────────
-
-We can use the variable which is declared below the function.
+Hoisting in JS:We can use the variable which is declared below the function.
 Methods
-----------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Actions that can be performed on an object.
+────────────────────────────────────────────────────────────────────────────────────────
 
 const calculator = {
   add: function(a, b) {
