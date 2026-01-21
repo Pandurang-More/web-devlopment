@@ -1,0 +1,114 @@
+DOM (Document Object Model)
+
+The DOM represents a document with a logical tree.
+
+It allows us to manipulate/change webpage content (HTML elements).
+
+--------------------------------
+
+DOM (Document Object Model) (HTML + CSS)
+
+manipulate the html and css by using javascript.
+
+document  
+└── body  
+    ├── div  
+    │   └── h1  
+    └── ul  
+        ├── li  
+        ├── li  
+        └── li  
+
+<body>
+  <div>
+    <h1>Todo</h1>
+  </div>
+  <ul>
+    <li>Eat</li>
+    <li>Code</li>
+    <li>Sleep</li>
+  </ul>
+</body>
+
+--------------------------------
+
+Selecting Elements
+
+getElementById
+
+Returns the Element as an object or null (if not found)
+
+document.getElementById("description");
+
+<p id="description"></p>
+
+console.dir(document.getElementById("description"));
+
+#description
+
+undefined
+
+--------------------------------
+
+Selecting Elements
+
+getElementByClassName
+
+Returns the Elements as an HTML Collection or empty collection (if not found)
+
+--------------------------------
+
+Selecting Elements
+
+getElementByTagName
+
+Returns the Elements as an HTML Collection or empty collection (if not found)
+
+--------------------------------
+
+Allows us to use any CSS selector
+
+document.querySelector('p');        //Selects first p element
+
+document.querySelector('#myId');    //Selects first element with id = myId
+
+document.querySelector('.myClass'); //Selects first element with class = myClass
+
+document.querySelectorAll("p");     //Selects all p elements
+
+--------------------------------
+
+Using Properties & Methods
+
+innerText  
+Shows the visible text contained in a node
+
+textContent  
+Shows all the full text
+
+innerHTML  
+Shows the full markup
+
+--------------------------------
+
+Manipulating Attributes
+
+obj.getAttribute( attr )
+
+obj.setAttribute( attr, val )
+
+--------------------------------
+
+Manipulating Style
+
+using classList
+
+obj.classList
+
+classList.add() to add new classes
+
+classList.remove() to remove classes
+
+classList.contains() to check if class exists
+
+classList.toggle() to toggle between add & remove
