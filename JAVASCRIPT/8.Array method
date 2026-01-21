@@ -104,3 +104,105 @@ temp = arr.reduce((res, el) => {
 })
 
 console.log(temp)
+
+
+
+
+
+
+
+
+
+
+Spread
+
+Expands an iterable into multiple values
+
+function func (...arr) {
+  //do something
+}
+
+let arr = [1, 2, 3, 4, 5];
+
+
+Math.min(...arr);
+1
+
+console.log(...arr);
+1 2 3 4 5
+
+console.log(..."apnacollege");
+a p n a c o l l e g e
+
+--------------------------------
+
+Spread  
+with Array Literals
+
+let arr = [1, 2, 3, 4, 5];
+
+
+let newArr = [...arr];
+newArr
+(5) [1, 2, 3, 4, 5]
+
+let chars = [..."hello"];
+chars
+(5) ['h', 'e', 'l', 'l', 'o']
+
+--------------------------------
+
+Spread  
+with Object Literals
+
+let data = {
+  email: "ironman@gmail.com",
+  password: "abcd",
+};
+
+let dataCopy = { ...data, id: 123 };
+
+--------------------------------
+
+Rest →
+
+Allows a function to take an indefinite number of arguments and bundle them in an array
+
+function sum(...args) {
+  return args.reduce((add, el) => add + el);
+}
+
+--------------------------------
+
+function sum(...args) {
+  return args.reduce((sum, el) => sum + el);
+}
+
+function min(...args) {
+  return args.reduce((min, el) => {
+    if (min > el) {
+      return el;
+    } else {
+      return min;
+    }
+  });
+}
+
+--------------------------------
+
+Destructuring  
+Objects
+
+const student = {
+  name: "karan",
+  class: 9,
+  age: 14,
+  subjects: ["hindi", "english", "math", "science", "social studies"],
+  username: "karan123",
+  password: 1234,
+};
+
+const { username: user, password: pass } = student;
+
+console.log(user); //"karan123"
+
