@@ -262,3 +262,68 @@ Levels:
 
 https://youtu.be/I0RQaztZulA?si=IlkIS8aRYYZqyCDp
 
+
+
+
+
+How REST API is Stateless (Project Example)
+Step 1️⃣ User logs in
+
+User logs in
+
+Server gives a token
+
+Step 2️⃣ User requests notes
+
+Frontend sends:
+
+Token
+
+API request
+
+Server checks token → sends notes → forgets user
+
+Step 3️⃣ User edits a note
+
+Frontend again sends:
+
+Token
+
+API request
+
+Server again checks token → updates note → forgets user
+
+👉 Server does NOT remember:
+
+Who you are
+
+What you did before
+
+Every request starts fresh
+---------------------------------------------------------------------------------------------------------------
+Real-Life Example (Very Easy)
+ATM Machine 💳
+
+You insert card → enter PIN → withdraw money
+
+ATM does not remember you after transaction
+
+Next time → you must insert card + PIN again
+
+👉 That is stateless
+---------------------------------------------------------------------------------------------------------------
+Why REST API is Stateless?
+
+Simple reasons:
+
+More secure
+
+Easy to scale
+
+Server does not store user info
+-------------------------------------------------------------------------------------------------------------------
+Tricky Interview Question
+Q. If REST is stateless, how does login work?
+
+Answer (Simple):
+Login works using token. Token is sent in every request.
