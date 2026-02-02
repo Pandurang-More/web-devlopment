@@ -2,7 +2,8 @@
 
 📌 1. Introduction to CI/CD
 • Definition: CI/CD is a core concept of DevOps that automates the process of moving code from development to production.
-• The Problem: In large applications (like E-commerce), multiple developers work on the same codebase. Manually merging, testing, and deploying code leads to "Integration Hell," errors, and slow releases.
+• The Problem: In large applications (like E-commerce), multiple developers work on the same codebase. Manually merging, testing, 
+and deploying code leads to "Integration Hell," errors, and slow releases.
 
 
 🏗️ 2. The Software Development Life Cycle (SDLC) Steps
